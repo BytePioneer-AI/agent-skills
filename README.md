@@ -43,12 +43,22 @@ ln -s "$(pwd)/agent-skills/skills/lead-delegation" ~/.agents/skills/lead-delegat
 
 ## 外部精选 Skill 推荐
 
-以下是日常高频搭配使用的优秀开源 Skill（直接从上游仓库安装以保持最新）：
+以下是日常高频搭配使用的优秀开源 Skill（直接指向官方上游仓库，随时安装/更新到最新版，不拷贝上游代码）：
 
-| 来源仓库 | 常用 Skill | 典型用途 | 安装命令 |
+### 工程研发
+
+| 来源仓库 | 常用 Skill | 典型用途 | 获取最新版 |
 | --- | --- | --- | --- |
-| [mattpocock/skills](https://github.com/mattpocock/skills) | `grill-me`、`tdd`、`diagnosing-bugs`、`codebase-design`、`writing-for-agents`、`code-review`、`handoff`、`research` | 需求追问与方案打磨、TDD、复杂排障、深模块设计、撰写 Agent 规范 | `npx skills add mattpocock/skills` |
-| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | `vercel-react-best-practices`、`web-design-guidelines` | React / Next.js 性能与 Web UI 界面规范审查 | `npx skills add vercel-labs/agent-skills` |
+| [mattpocock/skills](https://github.com/mattpocock/skills) | `grill-me`、`tdd`、`diagnosing-bugs`、`codebase-design`、`writing-for-agents`、`code-review`、`handoff`、`research` | 需求追问与方案打磨、TDD、复杂排障、深模块设计、撰写 Agent 规范 | `npx skills@latest add mattpocock/skills` |
+
+### 前端与交互设计
+
+| 来源仓库 | 常用 Skill | 典型用途 | 获取最新版 |
+| --- | --- | --- | --- |
+| [pbakaus/impeccable](https://github.com/pbakaus/impeccable) | `impeccable` | 旗舰级前端设计/改版/评审工作流（`Persuade` / `Operate` / `Read` / `Experience` 四模式、`craft-floor` 反 AI 模板底线、20+ 细分设计命令） | `npx impeccable install` |
+| [emilkowalski/skills](https://github.com/emilkowalski/skills) | `mobile-native`、`apple-design` | `mobile-native` 修复移动端 Web/PWA 平台层真机手感坑（`100dvh`、hover 卡死、iOS 输入框缩放、安全区等）；`apple-design` 翻译 Apple WWDC 弹簧物理与流体手势交互规范 | `npx skills@latest add emilkowalski/skills --skill mobile-native --skill apple-design` |
+| [anthropics/claude-plugins-official](https://github.com/anthropics/claude-plugins-official/tree/main/plugins/frontend-design/skills/frontend-design) | `frontend-design` | 轻量级视觉美学与排版指导，适合快速消除页面模板味 | 查看上游 [SKILL.md](https://github.com/anthropics/claude-plugins-official/blob/main/plugins/frontend-design/skills/frontend-design/SKILL.md) |
+| [vercel-labs/agent-skills](https://github.com/vercel-labs/agent-skills) | `vercel-react-best-practices`、`web-design-guidelines` | React / Next.js 性能优化与 Web UI 界面规范/可访问性审查 | `npx skills@latest add vercel-labs/agent-skills` |
 
 ---
 
